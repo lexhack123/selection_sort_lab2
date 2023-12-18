@@ -12,7 +12,7 @@ def display_menu():
     print("2. Generate random arrays")
     print("3. Manually input numbers")
     print("4. Quit")
-
+#отображение подменю
 def display_submenu():
     print("\nSub-menu:")
     print("1. Save sorted data to a file")
