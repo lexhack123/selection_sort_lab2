@@ -5,7 +5,7 @@ from data_saver import save_sorted_data_to_file  # Инструмент для �
 from plot_saver import save_plot  # Инструмент для сохранения графиков
 from selection_sort import selection_sort2  # Импорт функции сортировки выбором
 from data_loader import load_data_from_file
-
+#отображение главного меню
 def display_menu():
     print("\nMenu:")
     print("1. Load data from a file")
@@ -15,8 +15,8 @@ def display_menu():
 
 def display_submenu():
     print("\nSub-menu:")
-    print("5. Save sorted data to a file")
-    print("6. Save plots")
+    print("1. Save sorted data to a file")
+    print("2. Save plots")
 
 def main_menu():
     arr = []
@@ -64,7 +64,7 @@ def main_menu():
 
         while True:
             display_submenu()
-            sub_choice = input("Enter your choice (5-6) or 4 to go back to the main menu: ")  # Введите ваш выбор (5-6) или 4, чтобы вернуться в главное меню:
+            sub_choice = input("Enter your choice (1-3) or 3 to go back to the main menu: ")  # Введите ваш выбор (1-2) или 3, чтобы вернуться в главное меню:
 
             if sub_choice == "5":
                 # Сохранить отсортированные данные в файл
